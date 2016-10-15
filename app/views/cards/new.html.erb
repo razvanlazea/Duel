@@ -1,0 +1,11 @@
+<%= form_for :card, :url =>{:action => "create"}, :html => {multipart: true}, method: :post do |f| %>
+	Name <%= f.text_field :name %> </br>
+	Civ <%= f.text_field :civilization %></br>
+	Type <%= f.text_field :kind %></br>
+	Race <%= f.text_field :race %></br>
+	ManaCost <%= f.text_field :manaCost %></br>
+	ManaValue <%= f.text_field :manaValue %></br>
+	Power <%= f.text_field :power %></br>
+	Image <%= f.file_field :avatar %></br>
+ 	<%= f.submit "Add card" %></br>
+<%end%>
